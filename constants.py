@@ -1,0 +1,1 @@
+VAULT_NAME = "My Studies"
