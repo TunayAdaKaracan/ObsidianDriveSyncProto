@@ -44,7 +44,6 @@ def UpdateDeletedFiles(path, parent):
 def UploadFiles():
     if getcfg("LastUpdate") is None:
         AddFilesOnce(".\\assets", getcfg("DriveFolderId"))
-        UpdateDeletedFiles(".\\assets", getcfg("DriveFolderId"))
         setcfg("LastUpdate", datetime.datetime.now())
         return
     
